@@ -9,11 +9,11 @@ images_per_species = 10
 def download():
     for species in all_species:
 
-        print('Getting urls for', specie)
-        urls = get_urls(specie, images_per_specie)
+        print('Getting urls for', species)
+        urls = get_urls(species, images_per_species)
 
-        print('Downlaing images for', specie)
-        path = os.path.join('data', specie)
+        print('Downlaing images for', species)
+        path = os.path.join('data', species)
 
         download_images(urls, path)
 
